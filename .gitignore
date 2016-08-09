@@ -9,3 +9,4 @@
 /spec/examples.txt
 /tmp/
 .ruby-version
+gemfiles/*.lock
