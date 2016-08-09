@@ -11,7 +11,7 @@ RSpec.describe Multiplicity do
   end
 
   describe "table_name" do
-    before(:each){ Multiplicity.instance_variable_set(:@table_name, nil) }
+    before(:each){ Multiplicity.instance_variable_set(:@table, nil) }
 
     it "defaults to :tenants" do
       expect(Multiplicity.table_name).to eq :tenants
