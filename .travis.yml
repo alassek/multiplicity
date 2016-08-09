@@ -17,10 +17,10 @@ matrix:
       gemfile: gemfiles/Gemfile.rails-edge
   exclude:
     - rvm: 1.9.3
-      gemfile: gemfiles/Gemfile.rails_5_0
+      gemfile: gemfiles/Gemfile.rails-5_0
     - rvm: 2.0.0
-      gemfile: gemfiles/Gemfile.rails_5_0
+      gemfile: gemfiles/Gemfile.rails-5_0
     - rvm: 2.1.9
-      gemfile: gemfiles/Gemfile.rails_5_0
+      gemfile: gemfiles/Gemfile.rails-5_0
   allow_failures:
     - gemfile: gemfiles/Gemfile.rails-edge
