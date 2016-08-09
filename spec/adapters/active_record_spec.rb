@@ -27,7 +27,7 @@ RSpec.describe Multiplicity::Adapters::ActiveRecord do
 
       query = subject.find_by :subdomain, 'quux'
 
-      expect(query).to eq(%{SELECT "tenants"."id", "tenants"."subdomain", "tenants"."name", "tenants"."deleted_at" FROM "tenants" WHERE "tenants"."subdomain" = 'quux'})
+      expect(query).to match_sql(%{SELECT "tenants"."id", "tenants"."subdomain", "tenants"."name", "tenants"."deleted_at" FROM "tenants" WHERE "tenants"."subdomain" = 'quux'})
     end
 
     it "returns the attributes for the record" do

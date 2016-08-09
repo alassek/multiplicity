@@ -49,3 +49,13 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 end
+
+RSpec::Matchers.define :match_sql do |expected|
+  match do |actual|
+    actual.to_s.gsub(/\s+/, ' ').strip == expected.to_s.gsub(/\s+/, ' ').strip
+  end
+
+  description do
+    "match #{ expected }"
+  end
+end
