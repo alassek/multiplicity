@@ -1,7 +1,7 @@
 # Multiplicity
 
-![build status](https://travis-ci.org/alassek/multiplicity.svg?branch=master)
-![Gem Version](https://badge.fury.io/rb/multiplicity.svg)
+[![build status](https://travis-ci.org/alassek/multiplicity.svg?branch=master)](https://travis-ci.org/alassek/multiplicity)
+[![Gem Version](https://badge.fury.io/rb/multiplicity.svg)](https://rubygems.org/gems/multiplicity)
 
 Multiplicity is a gem for building multitenant Rack applications, with a much less opinionated approach than e.g. [Apartment](https://github.com/influitive/apartment) might entail.
 
