@@ -1,6 +1,5 @@
 require 'multiplicity/version'
 require 'multiplicity/tenant'
-require 'multiplicity/middleware'
 
 module Multiplicity
   def self.adapter; @adapter; end
@@ -24,5 +23,7 @@ module Multiplicity
   end
 end
 
+# Load Subdomain by default until there are multiple strategies
+require 'multiplicity/middleware/subdomain'
 # Always load AR adapter for now, until there is more than one
 require 'multiplicity/adapters/active_record'
