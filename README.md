@@ -54,8 +54,8 @@ The domain is purely a convenience setting, you can override this when calling `
 Finally, load the middleware. Either `config.ru` for a Rack app, or perhaps `application.rb` for Rails.
 
 ```ruby
-require 'multiplicity/middleware'
-use Multiplicity::Middleware
+require 'multiplicity/middleware/subdomain'
+use Multiplicity::Middleware::Subdomain
 ```
 
 This will automatically set `Multiplicity::Tenant.current` by subdomain for the duration of your request.
